@@ -1,0 +1,27 @@
+Static Array:
+is a fixed length container containing n elements indexable from the range [0, n - 1]
+Indexable -> each slot/index in the array can be referenced with a number
+
+When and where is a static array used?
+Storing and accessing sequential data
+Temporarily storing objects
+Used by IO routines as buffers
+Lookup tables and inverse lookup tables
+Can be used to return multiple values from a function
+Used in dynamic programing to cache answers to subproblems
+
+Complexity:
+      Static Array  Dynamic Array
+Acces       O(1)            O(1)
+Search      O(n)            O(n)
+Insertion   N/A             O(n)
+Appending   N/A             O(1)
+Deletion    N/A             O(n)
+
+Dynamic arrays
+Array that can grow and shrink in size
+How can we implement a dynamic array?
+One way is to use a static array
+Create a static array with an initial capacity
+Add elements to the underlying static array, keeping track of the number of elements
+If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original element into it

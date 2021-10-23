@@ -1,0 +1,2 @@
+Big-o notation gives an upper bound of the complexity in the worst case. -> Help to see eficiency of algorithim with huge data
+Se toma el termino mayor o el de mayor exponente
